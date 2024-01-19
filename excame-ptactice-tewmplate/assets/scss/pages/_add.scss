@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .menu {
+            width: 100%;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 20px;
+                list-style-type: none;
+
+                li {
+                    a {
+                        font-family: poppins;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 23px;
+                        color: black;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: #F41068;
+                        }
+                    }
+                }
+            }
+
+            .headerIcon {
+                width: 8%;
+                min-height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                margin-bottom: 10px;
+
+                a {
+                    i {
+                        color: black;
+
+                        &:hover {
+                            color: #F41068;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dropdown {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    header {
+        .container {
+            nav {
+                .menu {
+                    ul {
+                        display: none;
+
+                    }
+                }
+
+                .dropdown {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+#addPageInp{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .makeReserve {
+        min-height: 743px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .makeReserveInp {
+            width: 70%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #fff;
+            // padding: 65px;
+            border: 2px solid #F42F2C;
+            border-radius: 15px;
+
+        form{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+
+            input {
+                width: 50%;
+                min-height: 39px;
+                border: 1px solid #d0d0d0;
+
+                &::placeholder {
+                    color: #9b999c;
+                    padding-left: 15px;
+                    font-size: 13px;
+                }
+            }
+        }
+
+            button {
+                min-height: 42px;
+                width: 23%;
+                border: none;
+                background-color: #F42F2C;
+                font-family: Poppins, sans-serif;
+                ;
+                color: #fff;
+                font-size: 13px;
+                font-weight: 600;
+                transition: 0.4s ease;
+                margin-top: 15px;
+
+            }
+        }
+    }
+ 
+#addPageProoducts{
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .miniDiv {
+        
+            display: flex;
+        border: 1px solid #222;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+      
+            h2 {
+                font-family: Poppins, sans-serif;
+                font-size: 20px;
+                color: #222;
+                font-weight: 600;
+                line-height: 43px;
+            }
+
+       
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                button {
+                    border: none;
+                    color: #F42F2C;
+                    background-color: transparent;
+                    font-weight: 600;
+                    font-size: 20px;
+
+                 
+                }
+            
+        }
+    }
+    .btn-group{
+        margin-bottom: 10px;
+    }
+    
+}
